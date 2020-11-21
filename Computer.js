@@ -39,8 +39,6 @@
 
         changeHD(type, gb) {
             this.hardDrive.type = type;
-
-           // var newValue = parseInt(this.hardDrive.diskSpace.slice(0, this.hardDrive.diskSpace.length - 2)) + gb;
             this.hardDrive.diskSpace = JSON.stringify(gb).concat('GB');
         }
     };
